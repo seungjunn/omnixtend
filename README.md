@@ -19,6 +19,7 @@ omnixtend/
 ├── tools/                # Utility applications for traffic generation, analysis, and debugging
 ├── examples/             # End-to-end system examples for simulation and FPGA deployment
 ├── docs/                 # Architecture notes, design documents, and OmniXtend standard specs
+├── demo/                 # Demonstration setups with detailed instructions
 ├── scripts/              # Common environment setup and build scripts
 ├── LICENSE               # Apache 2.0 License
 └── README.md             # Project overview and instructions
@@ -51,12 +52,27 @@ omnixtend/
   - Combines components from `-c`, `-verilog`, and `-chisel` to create functional test platforms.
   - Targeted for FPGA deployments, end-to-end validation, and educational use.
 
+- **`demo/`**
+  - Self-contained demonstrations showcasing OmniXtend in action.
+  - Includes setup scripts, example configurations, and expected outputs.
+  - **To run a demo**, refer to the detailed guide in [`demo/README.md`](demo/README.md).
+
 - **`docs/`**
   - Documentation hub for the entire project.
   - Contains architecture overviews, technical notes, and protocol specification documents.
   - Includes the official *OmniXtend standard documents* used for reference and compliance.
 
 ## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-org/omnixtend.git
+   cd omnixtend
+   ```
+
+2. Refer to component-specific directories and their `README.md` files for detailed build and run instructions.
+
+3. For a hands-on demo, see [`demo/README.md`](demo/README.md).
 
 ## 📚 References
 
