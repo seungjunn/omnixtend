@@ -1,0 +1,6 @@
+[submodule "examples/MemoryNode"]
+	path = examples/MemoryNode
+	url = https://github.com/MemoryInterconnect/MemoryNode.git
+[submodule "examples/oxmem-fuse"]
+	path = examples/oxmem-fuse
+	url = https://github.com/MemoryInterconnect/oxmem-fuse.git
