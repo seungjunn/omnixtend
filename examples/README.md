@@ -2,7 +2,7 @@
 
 # Introduction
 
-This document explains how to extend the memory of a RISC-V virtual machine using OmniXtend memory, and how to set up an environment to run the llama 3.2 1B model in llama-cpp on that expanded memory. :contentReference[oaicite:0]{index=0}
+This document explains how to extend the memory of a RISC-V virtual machine using OmniXtend memory, and how to set up an environment to run the llama 3.2 1B model in llama-cpp on that expanded memory.
 
 # Installation
 
