@@ -113,11 +113,11 @@ make
 cd ../oxmem-fuse
 make
 mkdir om
-# Usage: ./oxmem-mount -f(foreground) --netdev=<my interface> --mac="<dest mac>" --size=<mem size in MB> --base=<offset> <mount point>
-./oxmem-mount --netdev=enp179s0f0np0 --mac="04:3f:72:dd:0b:05" --size=1024 --base=0x0 om/
+# Usage: ./oxmem-fuse-dax -f(foreground) --netdev=<my interface> --mac="<dest mac>" --size=<mem size in MB> --base=<offset> <mount point>
+./oxmem-fuse-dax -f --netdev=enp179s0f0np0 --mac="04:3f:72:dd:0b:05" --size=1024 --base=0x0 om/
 ```
 
-After these steps, you will have a 1 GB OmniXtend-backed memory region emulated by MemoryNode, and a file-based interface at om/oxmem to access it.
+After these steps, you will have a 1 GB OmniXtend-backed memory region emulated by MemoryNode, and a file-based interface at om/data to access it.
 
 # Experiments
 
@@ -155,13 +155,13 @@ cd llama.cpp
 
 ```
 
-### 1 GB Local RAM + 1 GB OmniXtend Memory
+### 1.4 GB Local RAM + 0.6 GB OmniXtend Memory
 
 ```bash
 # Launch VM
 /usr/local/bin/qemu-system-riscv64 -machine virt -nographic -m 2G -smp cpus=8 \
--object memory-backend-ram,size=1G,id=m0 \
--object memory-backend-file,size=1G,id=m1,share=off,mem-path=/home/swsok/omnixtend/examples/oxmem-fuse/om/oxmem \
+-object memory-backend-ram,size=1400M,id=m0 \
+-object memory-backend-file,size=624M,id=m1,share=on,mem-path=om/data \
 -bios /usr/lib/riscv64-linux-gnu/opensbi/generic/fw_jump.bin \
 -kernel /usr/lib/u-boot/qemu-riscv64_smode/u-boot.bin \
 -netdev user,id=eth0,hostfwd=tcp::10022-:22 -device virtio-net-device,netdev=eth0 \
