@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/logo/omnixtend-logo.png" alt="OmniXtend Logo" width="300"/>
+  <img src="images/omnixtend-logo.png" alt="OmniXtend Logo" width="300"/>
 </p>
 
 # OmniXtend Unified Repository
@@ -95,7 +95,7 @@ This project is licensed under the Apache License 2.0. See the LICENSE file for 
 ---
 
 <div align="center">
-  <img src="docs/logo/ETRI_CI_01.png" alt="ETRI Logo" width="200">
+  <img src="images/ETRI_CI_01.png" alt="ETRI Logo" width="200">
   <br><br>
   <strong>This project is developed and maintained by <a href="https://www.etri.re.kr/">ETRI (Electronics and Telecommunications Research Institute)</a></strong>
 </div>
