@@ -168,3 +168,5 @@ cd llama.cpp
 -drive file=riscv-ubuntu-22.img,format=raw,if=virtio -device virtio-rng-pci
 
 ```
+### Performance comparison results of llama-bench running on above VM settings.
+![alt text](https://github.com/etri/omnixtend/blob/main/examples/pic1_llamacpp_llama3.2_1B.png)
