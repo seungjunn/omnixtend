@@ -91,3 +91,11 @@ Please feel free to open issues or submit pull requests.
 ## 📜 License
 
 This project is licensed under the Apache License 2.0. See the LICENSE file for details.
+
+---
+
+<div align="center">
+  <img src="docs/logo/ETRI_CI_01.png" alt="ETRI Logo" width="200">
+  <br><br>
+  <strong>This project is developed and maintained by <a href="https://www.etri.re.kr/">ETRI (Electronics and Telecommunications Research Institute)</a></strong>
+</div>
